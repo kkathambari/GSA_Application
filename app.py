@@ -16,7 +16,7 @@ col1, col2 = st.columns([0.3, 0.7], gap="large")
 with col1:
     # IMPORTANT: Create a folder named "assets" in the same directory as your app.py
     # and place your professional photo there. Rename it to "profile.png".
-    st.image("assets/profile.png", width=250)
+    st.image("profile.png", width=250)
 
 with col2:
     st.title("My Google Student Ambassador Application", anchor=False)
@@ -97,4 +97,5 @@ if st.button("Click here to see my commitment!", type="primary"):
         my_bar.progress(percent_complete + 1, text=progress_text)
 
     st.balloons()
+
     st.success("Mission Ready! Thank you for your consideration.", icon="✅")
